@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100&family=Fredoka&family=Inconsolata&family=Noto+Sans&family=Noto+Sans+KR:wght@100;900&family=Roboto:ital,wght@0,400;1,300&family=Rubik:wght@300&display=swap');
+*{
+    font-family: 'Fredoka', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #E5E3C9;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-left{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-left h1 {
+    color: #008E89;
+    font-size: 3vw;
+    text-align: center;
+}
+
+img{
+    width: 35vw;
+}
+
+.main-right{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #B4CFB0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #94B49F;
+}
+
+.card > h1 {
+    color: #203239;
+    font-weight: 800;
+    margin: 0;
+}
+
+.texts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 10px;
+}
+
+.texts > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #E5E3C9;
+    color: #203239;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.texts > label{
+    color: #203239;
+    margin-bottom: 10px;
+}
+
+.texts > input::placeholder{
+    color: #203239;
+}
+
+.btn{
+    width: 40%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #203239;
+    box-shadow: 0px 10px 40px -12px #84a590;
+}
+
+@media only screen and (max-width: 950px){
+    .card{
+        width: 85%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        flex-direction: column;
+    }
+    .main-left  h1{
+        display: none;
+    }
+    .main-left{
+        width: 100%;
+        height: auto;
+    }
+    .main-right{
+        width: 100%;
+        height: auto;
+    }
+    .main-left img{
+        width: 50vw;
+    }
+    .card{
+        width: 80%;
+    }
+ 
+
+
+}
+
+
+
+
+    
